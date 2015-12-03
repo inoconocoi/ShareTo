@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_bottombar"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_background_selector"
+        android:clickable="true"
+        android:id="@+id/login_back"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:focusable="false"
+            android:background="@drawable/title_bar_back"/>
+    </LinearLayout>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@drawable/bg_commerce_cover"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="登陆"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_id"
+            android:hint="输入账号"
+            android:textColorHint="#999999"
+            android:layout_marginTop="83dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/password"
+            android:layout_alignStart="@+id/password" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="输入密码"
+            android:textColorHint="#999999"
+            android:layout_below="@+id/user_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="登陆"
+            android:textColor="#FFFFFF"
+            android:id="@+id/login_submit"
+            android:background="@drawable/submit_btn_selector"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>
